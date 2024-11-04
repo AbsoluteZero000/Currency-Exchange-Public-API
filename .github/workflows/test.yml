@@ -38,5 +38,7 @@ jobs:
       - name: Run Jest tests
         env:
           REDIS_URL: redis://localhost:6379 
+          EXCHANGE_API_URL: https://api.exchangerate-api.com/v4/latest
+
         run: npm test
 
